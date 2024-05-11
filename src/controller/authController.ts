@@ -67,11 +67,16 @@ const loginUser = async (req: Request, res: Response) => {
 const updateEmail = async (req: Request, res: Response) => {
   try {
     const { userId, username, password, newEmail } = req.body;
-
     const user = await User.findOne({ $or: [{ username }, { userId }] });
     if (!user) {
       return res.status(404).json({ message: "User not found" });
     }
+
+    if (user.provider !== Provider.NATIVE)
+      return res.status(400).json({
+        message: `Wrong Provider, user logged in using ${user.provider} . Email Update Not Allowed.`,
+      });
+
     const isPasswordValid = await bcrypt.compare(password, user.password);
     if (!isPasswordValid) {
       return res.status(401).json({ message: "Invalid password" });
