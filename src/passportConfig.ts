@@ -8,6 +8,7 @@ import { Provider } from "./models/user";
 import jwt from "jsonwebtoken";
 
 dotenv.config();
+dotenv.config({ path: "secrets.env" });
 
 passport.serializeUser((user: any, done) => {
   done(null, user.user._id);
