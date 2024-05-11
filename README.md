@@ -15,5 +15,5 @@ Steps to follow:
     Due to time constraints, there are some issues like google and github oauth need to be accessed from the terminal as swagger shows failed but it actually doesnt fail. The response for both of these will be a new page with the tokena and userId. I am aware that is a security issue, but it is good for demonstrations.
 
 6. Setup Swagger interface on Local
-![Uploading image.png…]()
+<img width="1510" alt="image" src="https://github.com/arkhamHack/vooshBackendAuthentication/assets/72064090/bb62adcf-e13b-4920-ae88-29544ff9b514">
 
