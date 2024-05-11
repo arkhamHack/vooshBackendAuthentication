@@ -3,7 +3,7 @@ Api authentication system for voosh
 
 Steps to follow: 
 1. Git clone the repo
-2. Save the env file sent in the mail in the root folder, just outside src
+2. Save the env file sent in the mail in the root folder, just outside src. Kindly set port to 3000.
 3. If you want to dockerize, run :
      1. sudo docker build -t my-app .
      2. docker run -p 3000:3000 my-app
