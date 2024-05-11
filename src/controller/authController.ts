@@ -5,6 +5,7 @@ import User, { Provider } from "../models/user";
 import { checkBlacklist, blacklistedTokens } from "../middleware/middleware";
 import dotenv from "dotenv";
 dotenv.config();
+dotenv.config({ path: "secrets.env" });
 
 const registerUser = async (req: Request, res: Response) => {
   try {
