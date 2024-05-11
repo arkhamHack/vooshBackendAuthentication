@@ -12,6 +12,7 @@ import dotenv from "dotenv";
 import "./passportConfig";
 
 dotenv.config();
+dotenv.config({ path: "secrets.env" });
 const app = express();
 
 app.use(cors());
