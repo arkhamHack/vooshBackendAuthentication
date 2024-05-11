@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JWT Token</title>
+</head>
+
+<body>
+    <h1>JWT Token:</h1>
+    <p id="token"></p>
+
+    <script>
+        fetch("/jwt")
+            .then(response => response.text())
+            .then(token => {
+                document.getElementById("token").innerText = token;
+            })
+            .catch(error => console.error("Error:", error));
+    </script>
+</body>
+
+</html>
