@@ -13,3 +13,7 @@ Steps to follow:
       2. yarn start
 5. Points to note:
     Due to time constraints, there are some issues like google and github oauth need to be accessed from the terminal as swagger shows failed but it actually doesnt fail. The response for both of these will be a new page with the tokena and userId. I am aware that is a security issue, but it is good for demonstrations.
+
+6. Setup Swagger interface on Local
+![Uploading image.png…]()
+
