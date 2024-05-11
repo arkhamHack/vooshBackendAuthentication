@@ -2,7 +2,7 @@ const swaggerDocument = {
   swagger: "2.0",
   info: {
     version: "1.0.0",
-    title: "My API",
+    title: "Voosh Auth API",
     description: "API documentation for authentication and profile endpoints",
   },
   basePath: "/",
@@ -233,7 +233,7 @@ const swaggerDocument = {
             schema: {
               type: "object",
               properties: {
-                username: {
+                userId: {
                   type: "string",
                 },
                 password: {
@@ -282,7 +282,7 @@ const swaggerDocument = {
             schema: {
               type: "object",
               properties: {
-                username: {
+                userId: {
                   type: "string",
                 },
                 password: {
