@@ -382,16 +382,8 @@ const swaggerDocument = {
     },
     "/auth/google": {
       get: {
-        summary: "Authenticate with Google",
-        parameters: [
-          {
-            name: "role",
-            in: "query",
-            description: "User Role",
-            required: false,
-            type: "string",
-          },
-        ],
+        summary:
+          "Authenticate with GitHub. Do Note: Authentication is working, Swagger will show failed, kindly use the google oauth link from the network tab to continue the process",
         responses: {
           "302": {
             description: "Redirect to Google authentication page",
@@ -418,7 +410,8 @@ const swaggerDocument = {
     },
     "/auth/github": {
       get: {
-        summary: "Authenticate with GitHub",
+        summary:
+          "Authenticate with GitHub. Do Note: Authentication is working, Swagger will show failed, kindly use the github oauth link from the network tab to continue the process",
         responses: {
           "302": {
             description: "Redirect to GitHub authentication page",
