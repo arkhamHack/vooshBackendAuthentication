@@ -1,4 +1,4 @@
-# vooshBackendAuthentication
+# Voosh Backend Authentication
 Api authentication system for voosh
 
 Steps to follow: 
